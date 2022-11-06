@@ -13,8 +13,8 @@ async fn main() -> std::io::Result<()> {
             .service(controller::hello_controller::hello)
             .service(controller::time_controller::get_locale_time)
             .service(controller::time_controller::get_utc_time)
-            .service(controller::suma_controller::do_sum)
-            .service(controller::suma_controller::do_sum_var)
+            .service(controller::sum_controller::do_sum)
+            .service(controller::sum_controller::do_sum_var)
     })
     .bind(addrs)?
     .run()

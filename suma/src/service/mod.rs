@@ -1,6 +1,6 @@
 use chrono::{DateTime, Local, Utc};
 
-mod suma_service;
+mod sum_service;
 mod timenow_service;
 
 pub fn get_local() -> DateTime<Local> {
@@ -12,9 +12,9 @@ pub fn get_utc() -> DateTime<Utc> {
 }
 
 pub fn suma_normal(x: i32, y:i32) -> i32 {
-    suma_service::suma(x, y)
+    sum_service::suma(x, y)
 } 
 
 pub fn suma_variadica(x:i32, y:i32) -> i32 {
-    suma_service::suma_variadica(x, y)
+    sum_service::suma_variadica(x, y)
 }
