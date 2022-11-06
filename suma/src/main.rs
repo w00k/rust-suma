@@ -11,6 +11,7 @@ async fn main() -> std::io::Result<()> {
     HttpServer::new(move || {
         App::new()
             .service(controller::hello_controller::hello)
+            .service(controller::hello_controller::hello_user_name)
             .service(controller::time_controller::get_locale_time)
             .service(controller::time_controller::get_utc_time)
             .service(controller::sum_controller::do_sum)

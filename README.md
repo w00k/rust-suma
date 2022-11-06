@@ -23,8 +23,8 @@ brew install visual-studio-code
 
 <br>  
 
-Acontinuación es aconsejable instalar la extensión [analyzer](
-https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) descargandola desde el gestor de extensiones de Visual Studio Code o desde el el siguiente [link](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
+Acontinuación es aconsejable instalar la extensión [rust-analyzer](
+https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer) descargando la desde el marketplace de Visual Studio Code o desde el el siguiente [link](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer).
 
 <br>
 
@@ -67,8 +67,10 @@ cargo run
 2.- El segundo paso es separ las funciones en un archivo aparte, creando un <b>módulo</b> y llamarlo desde el <b>main.rs</b> 
 <br>
 3.- Lo Siguiente que vamos a hacer es agregar una dependencia, para mostrar la hora UTC y la hora local con chrono. 
+<br>
+4.- Tomar todo y hacerlo un microservicio separado por módulos.
 
-
+Finalmente, el proyecto tendrá la siguiente estructura.
 ```
 suma
 ├── src                          // root folder
