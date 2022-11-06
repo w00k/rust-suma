@@ -93,3 +93,7 @@ suma
 ├── Cargo.lock 
 └── Cargo.toml                  // archivo con las dependencias del proyecto
 ```
+
+
+## Endpoint
+En la carpeta postman están los postman con los métodos y objetos

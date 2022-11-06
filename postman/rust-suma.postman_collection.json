@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "7b3334d5-6e51-4f98-8630-0d061d1c0901",
+		"name": "rust-suma",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21250465"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/get-utc-time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/get-utc-time",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-utc-time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/get-local-time",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/get-local-time",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"get-local-time"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/do-sum",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"x\": 5,\n    \"y\": 18\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/do-sum",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"do-sum"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/do-sum-var",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"x\": 100,\n    \"y\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/do-sum-var",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"do-sum-var"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
