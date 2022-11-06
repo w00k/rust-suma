@@ -62,6 +62,32 @@ cargo run
 
 ## Manos a la obra
 
-Lo primero que haremos es crear 2 funciones que sumarán 2 números, ¿por qué? solo para mostrar las 2 formas que tiene <b>Rust</b> de retornar datos.
+1.- Lo primero que haremos es crear 2 funciones que sumarán 2 números, ¿por qué? solo para mostrar las 2 formas que tiene <b>Rust</b> de retornar datos.
 <br>
-El segundo paso es separ las funciones en un archivo aparte, creando un <b>módulo</b> y llamarlo desde el <b>main.rs</b> 
+2.- El segundo paso es separ las funciones en un archivo aparte, creando un <b>módulo</b> y llamarlo desde el <b>main.rs</b> 
+<br>
+3.- Lo Siguiente que vamos a hacer es agregar una dependencia, para mostrar la hora UTC y la hora local con chrono. 
+
+
+```
+suma
+├── src                          // root folder
+│   ├── main.rs                  // main start the program
+│   ├── controller 
+│   │   ├── mod.rs 
+│   │   ├── hello_controller.rs 
+│   │   ├── time_controller.rs 
+│   │   └── sum_controller.rs 
+│   ├── models 
+│   │   ├── mod.rs 
+│   │   ├── sum_request.rs 
+│   │   └── sum_response.rs 
+│   ├── service 
+│   │   ├── mod.rs 
+│   │   ├── timenow_service.rs 
+│   │   └── sum_service.rs 
+├── target                      // carpeta con varias cosas que no tocaremos
+├── .gitignore
+├── Cargo.lock 
+└── Cargo.toml                  // archivo con las dependencias del proyecto
+```
