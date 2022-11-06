@@ -1,12 +1,22 @@
-use chrono::prelude::*;
+use actix_web::{ App, HttpServer, web::service};
 
-pub mod service;
+mod service;
+pub mod controller;
+pub mod models;
 
-fn main() {
-    let utc: DateTime<Utc> = Utc::now();
-    let now = Local::now();
-    println!("Start at {} local datetime, {} ", now, utc);
+#[actix_web::main]
+async fn main() -> std::io::Result<()> {
+    let addrs = ("127.0.0.1", 8080);
 
-    println!("{}", service::suma::suma(10, 4));
-    println!("{}", service::suma::suma_variadica(10, 4));
+    HttpServer::new(move || {
+        App::new()
+            .service(controller::hello_controller::hello)
+            .service(controller::time_controller::get_locale_time)
+            .service(controller::time_controller::get_utc_time)
+            .service(controller::suma_controller::do_sum)
+            .service(controller::suma_controller::do_sum_var)
+    })
+    .bind(addrs)?
+    .run()
+    .await
 }
