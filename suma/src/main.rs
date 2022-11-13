@@ -16,6 +16,7 @@ async fn main() -> std::io::Result<()> {
             .service(controller::time_controller::get_utc_time)
             .service(controller::sum_controller::do_sum)
             .service(controller::sum_controller::do_sum_var)
+            .service(controller::rick_and_morty_controller::rick_and_morty_controller)
     })
     .bind(addrs)?
     .run()
